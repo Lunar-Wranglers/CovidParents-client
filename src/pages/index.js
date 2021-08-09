@@ -1,16 +1,13 @@
 import * as React from "react"
+import Layout from '../components/layout'
 
 const IndexPage = () => {
   return (
-    <main>
-      <title>
-        Home Page
-      </title>
-      <h1>VaxFacts</h1>
-      <p>
-        This is the landing page for VaxFacts currently. There are three branches that have different rough sketches: ID1, JL1, JL2
-      </p>
-    </main>
+    <Layout pageTitle='Home Page'>
+       <p>
+         This is the landing page for VaxFacts currently. There are three branches that have different rough sketches: ID1, JL1, JL2
+       </p>
+    </Layout>
   )
 }
 
