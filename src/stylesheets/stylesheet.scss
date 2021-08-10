@@ -1,3 +1,7 @@
-.inline {
-  display: inline;
+$primary: #ffe594;
+@import "~bootstrap/scss/bootstrap";
+
+.centered {
+  display: flex;
+  justify-content: center;
 }

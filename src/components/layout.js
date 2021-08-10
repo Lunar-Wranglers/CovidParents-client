@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import SignUp from './SignUp'
+import SignIn from './SignIn'
 
 const Layout = ({ pageTitle, children }) => {
     return (
@@ -14,6 +15,7 @@ const Layout = ({ pageTitle, children }) => {
                 </h1>
                 {children}
                 <SignUp />
+                <SignIn />
             </main>
         </div>
     )
