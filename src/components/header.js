@@ -2,16 +2,14 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import SearchBar from './searchBar'
 import { 
-    navLinks,
-    navLinkItem,
-    navLinkText
- } from './layout.module.css'
+    LogoSearch
+ } from './header.module.css'
 
 const Header = ({ children }) => {
     return (
         <div>
-            <div>
-                <Link to='/'>Logo</Link>
+            <div className='logosearch'>
+                <Link to='/' id='Logo'>Logo</Link>
                 <SearchBar />
             </div>
             <nav>
