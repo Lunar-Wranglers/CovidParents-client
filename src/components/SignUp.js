@@ -45,7 +45,7 @@ class SignUp extends Component {
 
     return (
       <>
-        <Button variant="primary" onClick={this.handleShow}>
+        <Button variant="body" onClick={this.handleShow}>
             Sign Up
         </Button>
 
