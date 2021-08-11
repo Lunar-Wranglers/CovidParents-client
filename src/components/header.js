@@ -22,37 +22,52 @@ const unauthenticatedOptions = (
     </Fragment>
 )
 
-const Header = ({ children }) => {
-    return (
-        <div>
-            <div className='logosearch'>
-                <Link to='/' id='Logo'>Logo</Link>
-                <SearchBar />
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to=''>About Covid-19</Link>
-                    </li>
-                    <li>
-                        <Link to=''>Learn Facts</Link>
-                    </li>
-                    <li>
-                        <Link to=''>Find A Vaccine</Link>
-                    </li>
-                    <li>
-                        <Link to=''>Get Tested</Link>
-                    </li>
-                    <li>
-                        <Link to=''>Data</Link>
-                    </li>
-                    <li>
-                        <Link to=''>Travel</Link>
-                    </li>
-                </ul>
+const alwaysOptions = (
+    <Fragment>
+        <DropdownButton id='aboutCovid' title='About Covid'>
+            <Dropdown.Item>
+                About Covid-19
+            </Dropdown.Item>
+        </DropdownButton>
+        <DropdownButton id='learnFacts' title='Learn Facts'>
+            <Dropdown.Item href=''>
+                Fact Link 1
+            </Dropdown.Item>
+            <Dropdown.Item href=''>
+                Fact Link 2
+            </Dropdown.Item>
+            <Dropdown.Item href=''>
+                Fact Link 3
+            </Dropdown.Item>
+        </DropdownButton>
+        <Link to=''>Find A Vaccine</Link>
+        <Link to=''>Get Tested</Link>
+        <Link to=''>Data</Link>
+        <Link to=''>Travel</Link>
+    </Fragment>
+)
 
-            </nav>
-        </div>
+const Header = ({ user, children }) => {
+    return (
+        
+        <Fragment>
+            <div>
+                <Navbar.Brand href='#'>
+                    VaxFacts
+                </Navbar.Brand>
+                <SearchBar className='logosearch'/>
+            </div>
+            <Navbar bg="primary" variant="dark" expand="md" id='nav'>
+            
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id='basic-navbar-nav'>
+                <Nav className='ml-auto'>
+                    { alwaysOptions }
+                    { user ? authenticatedOptions : unauthenticatedOptions }
+                </Nav>
+            </Navbar.Collapse>
+            </Navbar>
+        </Fragment>
     )
 }
 
