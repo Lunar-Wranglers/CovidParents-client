@@ -7,7 +7,7 @@ const SearchBar = ({ keyword, setKeyword }) => {
             style={BarStyling}
             key="random1"
             value={keyword}
-            placeholder={"search country"}
+            placeholder={"Curious?"}
             onChange={(e) => setKeyword(e.target.value)}
         />
     )
