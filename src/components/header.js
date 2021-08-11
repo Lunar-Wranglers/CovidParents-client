@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { Fragment } from 'react'
 import { Link } from 'gatsby'
 import SignUp from './SignUp'
 import SignIn from './SignIn'
@@ -16,7 +16,10 @@ const authenticatedOptions = (
 )
 
 const unauthenticatedOptions = (
-    
+    <Fragment>
+        <SignUp />
+        <SignIn />
+    </Fragment>
 )
 
 const Header = ({ children }) => {
@@ -47,8 +50,7 @@ const Header = ({ children }) => {
                         <Link to=''>Travel</Link>
                     </li>
                 </ul>
-                <SignUp />
-                <SignIn />
+
             </nav>
         </div>
     )
