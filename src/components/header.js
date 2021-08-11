@@ -10,20 +10,20 @@ import {
  } from './header.module.css'
 
 const authenticatedOptions = (
-    <Fragment>
+    <div className='auth'>
         <Nav.Link href=''>Logout</Nav.Link>
-    </Fragment>
+    </div>
 )
 
 const unauthenticatedOptions = (
-    <Fragment>
+    <div className='auth'>
         <SignUp />
         <SignIn />
-    </Fragment>
+    </div>
 )
 
 const alwaysOptions = (
-    <Fragment>
+    <div className='d-flex justify-content-between mb-6'>
         <DropdownButton variant='body' id='aboutCovid' title='About Covid'>
             <Dropdown.Item>
                 About Covid-19
@@ -52,25 +52,24 @@ const alwaysOptions = (
         <Button variant='body'>
             <Link to=''>Travel</Link>
         </Button>
-    </Fragment>
+    </div>
 )
 
 const Header = ({ user, children }) => {
-    const SearchStyle = {position:"absolute"}
     return (
         
         <Fragment>
-            <div>
+            <div className='d-flex justify-content-between mb-2'>
                 <Navbar.Brand className='text-dark' href='#'>
                     VaxFacts
                 </Navbar.Brand>
-                <SearchBar className='logosearch' style={SearchStyle}/>
+                <SearchBar />
             </div>
             <Navbar bg="secondary" variant="dark" expand="md" id='nav'>
             
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id='basic-navbar-nav'>
-                <Nav className='ml-auto'>
+                <Nav className='d-flex justify-content-between'>
                     { alwaysOptions }
                     { user ? authenticatedOptions : unauthenticatedOptions }
                 </Nav>
