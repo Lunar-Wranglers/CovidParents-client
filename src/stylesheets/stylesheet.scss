@@ -10,9 +10,17 @@ $primary: #ffe594;
   display: flex;
 }
 
+.homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .topguard {
   display: flex;
   justify-content: center;
+  height: 40vmax;
+  padding-top: 5%;
 }
 
 #vacReq {
@@ -27,24 +35,16 @@ $primary: #ffe594;
 
 .midguard {
   justify-content: space-evenly;
-  padding: 10% 0 0 0;
 }
 
-#sdi {
-  width: 250px;
-  height: 250px;
-  margin: auto;
+.humit {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vmax;
+  height: 30vmax;
   background: #C4C4C4;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 5px;
-}
-#videoPlayer {
-  width: 250px;
-  height: 250px;
   margin: auto;
-  background: #C4C4C4;
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  border-radius: 5px;
 }
