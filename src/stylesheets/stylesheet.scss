@@ -6,8 +6,12 @@ $primary: #ffe594;
   justify-content: center;
 }
 
+.container {
+  display: flex;
+}
+
 #vacReq {
-  position: absolute;
+  display: flex;
   width: 1044px;
   height: 484px;
   left: 196px;
@@ -18,15 +22,25 @@ $primary: #ffe594;
   border-radius: 5px;
 }
 
-#videoPlayer {
-position: absolute;
-width: 492px;
-height: 396px;
-left: 748px;
-top: 765px;
+.midguard {
+  justify-content: space-evenly;
+}
 
-background: #C4C4C4;
-border: 1px solid #000000;
-box-sizing: border-box;
-border-radius: 5px;
+#sdi {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  background: #C4C4C4;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+#videoPlayer {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  background: #C4C4C4;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
