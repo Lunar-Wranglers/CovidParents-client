@@ -4,7 +4,7 @@ import SignUp from './SignUp'
 import SignIn from './SignIn'
 import SearchBar from './searchBar'
 
-import { Nav, Navbar, Dropdown, DropdownButton } from 'react-bootstrap'
+import { Nav, Navbar, Dropdown, DropdownButton, Button } from 'react-bootstrap'
 import { 
     LogoSearch
  } from './header.module.css'
@@ -24,12 +24,12 @@ const unauthenticatedOptions = (
 
 const alwaysOptions = (
     <Fragment>
-        <DropdownButton id='aboutCovid' title='About Covid'>
+        <DropdownButton variant='body' id='aboutCovid' title='About Covid'>
             <Dropdown.Item>
                 About Covid-19
             </Dropdown.Item>
         </DropdownButton>
-        <DropdownButton id='learnFacts' title='Learn Facts'>
+        <DropdownButton variant='body' id='learnFacts' title='Learn Facts'>
             <Dropdown.Item href=''>
                 Fact Link 1
             </Dropdown.Item>
@@ -40,24 +40,33 @@ const alwaysOptions = (
                 Fact Link 3
             </Dropdown.Item>
         </DropdownButton>
-        <Link to=''>Find A Vaccine</Link>
-        <Link to=''>Get Tested</Link>
-        <Link to=''>Data</Link>
-        <Link to=''>Travel</Link>
+        <Button variant='body'>
+            <Link to=''>Find A Vaccine</Link>
+        </Button>
+        <Button variant='body'>
+            <Link to=''>Get Tested</Link>
+        </Button>
+        <Button variant='body'>
+            <Link to=''>Data</Link>
+        </Button>
+        <Button variant='body'>
+            <Link to=''>Travel</Link>
+        </Button>
     </Fragment>
 )
 
 const Header = ({ user, children }) => {
+    const SearchStyle = {position:"absolute"}
     return (
         
         <Fragment>
             <div>
-                <Navbar.Brand href='#'>
+                <Navbar.Brand className='text-dark' href='#'>
                     VaxFacts
                 </Navbar.Brand>
-                <SearchBar className='logosearch'/>
+                <SearchBar className='logosearch' style={SearchStyle}/>
             </div>
-            <Navbar bg="primary" variant="dark" expand="md" id='nav'>
+            <Navbar bg="secondary" variant="dark" expand="md" id='nav'>
             
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id='basic-navbar-nav'>
