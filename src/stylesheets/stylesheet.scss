@@ -10,12 +10,15 @@ $primary: #ffe594;
   display: flex;
 }
 
+.topguard {
+  display: flex;
+  justify-content: center;
+}
+
 #vacReq {
   display: flex;
-  width: 1044px;
-  height: 484px;
-  left: 196px;
-  top: 247px;
+  width: 50%;
+  height: 75%;
   background: green;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -24,6 +27,7 @@ $primary: #ffe594;
 
 .midguard {
   justify-content: space-evenly;
+  padding: 10% 0 0 0;
 }
 
 #sdi {

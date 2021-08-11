@@ -6,14 +6,15 @@ import { container } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
     return (
-        <div className={container}>
+        <div>
             <title>
                 {pageTitle}
             </title>
             <main>
                 <Header />
-                {children}
-
+                <div className={container}>
+                    {children}
+                </div>
             </main>
         </div>
     )
