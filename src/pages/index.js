@@ -5,25 +5,25 @@ import '../stylesheets/stylesheet.scss'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle='Home Page'>
+    <Layout pageTitle='Home Page' className='homePage'>
        <div class='topguard'>
-         <div id='vacReq'>
-          <h3>Vaccine Requirements</h3>
-          <p>
-            Information about vaccines
-          </p>
-          <ul>
-           <li>
-             requirements
-           </li>
-          </ul>
-        </div>
+          <div id='vacReq'>
+            <h3>Vaccine Requirements</h3>
+            <p>
+              Information about vaccines
+            </p>
+            <ul>
+              <li>
+                requirements
+              </li>
+            </ul>
+          </div>
         </div>
         <div className='d-flex justify-content-between mb-2' id='midguard'>
-         <div id='sdi'>
+         <div className='humit' id='sdi'>
            Social Distancing info
          </div>
-         <div id='videoPlayer'>
+         <div className='humit' id='videoPlayer'>
            video goes here
          </div>
        </div>
