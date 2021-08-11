@@ -5,3 +5,28 @@ $primary: #ffe594;
   display: flex;
   justify-content: center;
 }
+
+#vacReq {
+  position: absolute;
+  width: 1044px;
+  height: 484px;
+  left: 196px;
+  top: 247px;
+  background: green;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#videoPlayer {
+position: absolute;
+width: 492px;
+height: 396px;
+left: 748px;
+top: 765px;
+
+background: #C4C4C4;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 5px;
+}
