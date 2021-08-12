@@ -27,16 +27,17 @@ const IndexPage = () => {
            video goes here
          </div>
        </div>
-       <div id='covidStats'>
-         <div id='graphics'>
+       <div className='d-flex justify-content-between mb-2' id='lowguard'>
+         <div className='covidStats' id='graphics'>
            Graph data supporting ol information
          </div>
-         <ol>
-           <li>
+         <div className='covidStats'>
+          <ol id='stats'>
+            <li>
              stats
-           </li>
-         </ol>
-
+            </li>
+          </ol>
+        </div>
        </div>
     </Layout>
   )

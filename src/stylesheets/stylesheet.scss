@@ -35,9 +35,22 @@ $primary: #ffe594;
 
 .midguard {
   justify-content: space-evenly;
+  padding-bottom: 5%;
 }
 
 .humit {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vmax;
+  height: 30vmax;
+  background: #C4C4C4;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.covidStats {
   display: flex;
   justify-content: space-evenly;
   width: 30vmax;
