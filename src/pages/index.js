@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from '../components/layout'
+import Layout from '../components/layout/layout'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../stylesheets/stylesheet.scss'
 
@@ -33,7 +33,16 @@ const IndexPage = () => {
          </div>
          <div className='covidStats'>
           <ol id='stats'>
-            <li>
+            <li className='fourdown'>
+             stats
+            </li>
+            <li className='fourdown'>
+             stats
+            </li>
+            <li className='fourdown'>
+             stats
+            </li>
+            <li className='fourdown'>
              stats
             </li>
           </ol>

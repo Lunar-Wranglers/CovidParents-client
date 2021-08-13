@@ -1,13 +1,11 @@
 import React, { Fragment } from 'react'
 import { Link } from 'gatsby'
-import SignUp from './SignUp'
-import SignIn from './SignIn'
-import SearchBar from './searchBar'
+import SignUp from '../auth/SignUp'
+import SignIn from '../auth/SignIn'
+import SearchBar from '../searchBar'
 
 import { Nav, Navbar, Dropdown, DropdownButton, Button } from 'react-bootstrap'
-import { 
-    LogoSearch
- } from './header.module.css'
+import { LogoSearch } from './header.module.css'
 
 const authenticatedOptions = (
     <div className='auth'>
@@ -63,7 +61,7 @@ const Header = ({ user, children }) => {
                 <Navbar.Brand className='text-dark' href='#'>
                     VaxFacts
                 </Navbar.Brand>
-                <SearchBar />
+                <SearchBar className={LogoSearch}/>
             </div>
             <Navbar bg="secondary" variant="dark" expand="md" id='nav'>
             
