@@ -1,13 +1,19 @@
 .link {
     color: black;
 }
-.logosearch {
-    position: absolute;
+
+#logo {
+  padding-left: 5%;
+}
+
+.LogoSearch {
+    
     width: 1291px;
     height: 84px;
     left: 74px;
     top: 79px;
     background: #FAFAFA;
+    padding-right: 5%;
 }
 
 #attempt {
