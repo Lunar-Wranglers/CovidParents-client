@@ -2,10 +2,11 @@ import React, { Fragment } from 'react'
 import { Link } from 'gatsby'
 import SignUp from '../auth/SignUp'
 import SignIn from '../auth/SignIn'
-import SearchBar from '../searchBar'
+import SearchBar from '../hooks/searchBar'
 
 import { Nav, Navbar, Dropdown, DropdownButton, Button } from 'react-bootstrap'
-import { LogoSearch } from './header.module.css'
+
+import { logo, LogoSearch } from './header.module.css'
 
 const authenticatedOptions = (
     <div className='auth'>
@@ -58,7 +59,7 @@ const Header = ({ user, children }) => {
         
         <Fragment>
             <div className='d-flex justify-content-between mb-2'>
-                <Navbar.Brand className='text-dark' href='#'>
+                <Navbar.Brand className='text-dark' id={logo} href='/'>
                     VaxFacts
                 </Navbar.Brand>
                 <SearchBar className={LogoSearch}/>
