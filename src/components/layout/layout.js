@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import Header from './header'
-import { container } from './layout.module.css'
+import { container } from '../../stylesheets/stylesheet.scss'
 
 const Layout = ({ pageTitle, children }) => {
     return (

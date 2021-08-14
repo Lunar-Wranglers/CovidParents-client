@@ -6,7 +6,7 @@ import SearchBar from '../hooks/searchBar'
 
 import { Nav, Navbar, Dropdown, DropdownButton, Button } from 'react-bootstrap'
 
-import { logo, LogoSearch } from './header.module.css'
+import { logo, LogoSearch } from './header.module.scss'
 
 const authenticatedOptions = (
     <div className='auth'>
