@@ -39,7 +39,7 @@ const alwaysOptions = (
                 Fact Link 3
             </Dropdown.Item>
         </DropdownButton>
-        <Button variant='body' href='/vaccine'>
+        <Button variant='body' href='/vaccinepage'>
           Find A Vaccine
         </Button>
         <Button variant='body' href=''>
