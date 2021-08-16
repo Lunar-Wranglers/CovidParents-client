@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react'
-import { Link } from 'gatsby'
+import React from 'react'
 import SignUp from '../auth/SignUp'
 import SignIn from '../auth/SignIn'
 import SearchBar from '../hooks/searchBar'
 
 import { Nav, Navbar, Dropdown, DropdownButton, Button } from 'react-bootstrap'
+import { header } from '../../stylesheets/stylesheet.scss'
 
-import { logo, LogoSearch } from './header.module.scss'
+import { navlink, logo, LogoSearch } from './header.module.scss'
 
 const authenticatedOptions = (
     <div className='auth'>
@@ -29,8 +29,8 @@ const alwaysOptions = (
             </Dropdown.Item>
         </DropdownButton>
         <DropdownButton variant='body' id='learnFacts' title='Learn Facts'>
-            <Dropdown.Item href=''>
-                Fact Link 1
+            <Dropdown.Item href='/transmission'>
+                  Transmission
             </Dropdown.Item>
             <Dropdown.Item href=''>
                 Fact Link 2
@@ -39,17 +39,17 @@ const alwaysOptions = (
                 Fact Link 3
             </Dropdown.Item>
         </DropdownButton>
-        <Button variant='body'>
-            <Link to=''>Find A Vaccine</Link>
+        <Button variant='body' href='/vaccine'>
+          Find A Vaccine
         </Button>
-        <Button variant='body'>
-            <Link to=''>Get Tested</Link>
+        <Button variant='body' href=''>
+          Get Tested
         </Button>
-        <Button variant='body'>
-            <Link to=''>Data</Link>
+        <Button variant='body' href=''>
+          Data
         </Button>
-        <Button variant='body'>
-            <Link to=''>Travel</Link>
+        <Button variant='body' href=''>
+          Travel
         </Button>
     </div>
 )
@@ -57,7 +57,7 @@ const alwaysOptions = (
 const Header = ({ user, children }) => {
     return (
         
-        <Fragment>
+        <div id='header'>
             <div className='d-flex justify-content-between mb-2'>
                 <Navbar.Brand className='text-dark' id={logo} href='/'>
                     VaxFacts
@@ -68,13 +68,13 @@ const Header = ({ user, children }) => {
             
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id='basic-navbar-nav'>
-                <Nav className='d-flex justify-content-between'>
+                <Nav className='d-flex justify-content-space-evenly'>
                     { alwaysOptions }
                     { user ? authenticatedOptions : unauthenticatedOptions }
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
-        </Fragment>
+        </div>
     )
 }
 

@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import Header from './header'
+import Footer from './footer'
 import { container } from '../../stylesheets/stylesheet.scss'
 
 const Layout = ({ pageTitle, children }) => {
@@ -14,6 +15,7 @@ const Layout = ({ pageTitle, children }) => {
                 <div className={container}>
                     {children}
                 </div>
+                <Footer />
             </main>
         </div>
     )

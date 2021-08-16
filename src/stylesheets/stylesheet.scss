@@ -10,23 +10,32 @@ $primary: #ffe594;
   display: flex;
 }
 
+#header {
+  position: fixed;
+  padding-top: .1%;
+  width: 100vmax;
+  background-color: white;
+  opacity: 1;
+}
+
 .homePage {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding-top: 15%;
+  padding-bottom: 5%;
 }
 
 .topguard {
   display: flex;
   justify-content: center;
   height: 40vmax;
-  padding-top: 5%;
 }
 
 #vacReq {
   display: flex;
-  width: 50%;
-  height: 75%;
+  width: 72%;
+  height: 90%;
   background: green;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -41,8 +50,8 @@ $primary: #ffe594;
 .humit {
   display: flex;
   justify-content: space-evenly;
-  width: 30vmax;
-  height: 30vmax;
+  width: 40vmax;
+  height: 40vmax;
   background: #C4C4C4;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -70,14 +79,24 @@ $primary: #ffe594;
   padding-left: 5%;
 }
 
-.LogoSearch {
-    
-    width: 1291px;
-    height: 84px;
-    left: 74px;
-    top: 79px;
-    background: #FAFAFA;
-    padding-right: 5%;
+.LogoSearch {  
+  width: 1291px;
+  height: 84px;
+  left: 74px;
+  top: 79px;
+  background: #FAFAFA;
+  padding-right: 5%;
 }
-.fourdown {
+
+.links {
+  color: black;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vmax;
+  height: 5vmax;
+  text-align: center;
+  opacity: .5;
 }

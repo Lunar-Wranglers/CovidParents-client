@@ -5,7 +5,8 @@ import '../stylesheets/stylesheet.scss'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle='Home Page' className='homePage'>
+    <Layout pageTitle='Home Page'>
+      <div className='homePage'>
        <div class='topguard'>
           <div id='vacReq'>
             <h3>Vaccine Requirements</h3>
@@ -32,22 +33,17 @@ const IndexPage = () => {
            Graph data supporting ol information
          </div>
          <div className='covidStats'>
-          <ol id='stats'>
-            <li className='fourdown'>
-             stats
-            </li>
-            <li className='fourdown'>
-             stats
-            </li>
-            <li className='fourdown'>
-             stats
-            </li>
-            <li className='fourdown'>
-             stats
-            </li>
-          </ol>
+          <div className='stats' id='stat1'>
+          </div>
+          <div className='stats' id='stat2'>
+          </div>
+          <div className='stats' id='stat3'>
+          </div>
+          <div className='stats' id='stat4'>
+          </div>
         </div>
        </div>
+      </div>
     </Layout>
   )
 }
