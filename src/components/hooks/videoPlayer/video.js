@@ -39,6 +39,18 @@ const VideoPlayer = () => {
             value={playerState.progress}
             onChange={(e) => handleVideoProgress(e)}
           />
+          <select
+            className="velocity"
+            value={playerState.speed}
+            onChange={(e) => handleVideoSpeed(e)}
+          >
+            <option value='0.50'>0.50x</option>
+            <option value='1'>1x</option>
+            <option value='1.25'>1.25x</option>
+            <option value='1.50'>1.50x</option>
+            <option value='1.75'>1.75x</option>
+            <option value='2.0'>2.0x</option>
+          </select>
         </div>
       </div>
     </div>
