@@ -3,6 +3,8 @@ import Layout from '../components/layout/layout'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../stylesheets/stylesheet.scss'
 
+import VideoPlayer from '../components/hooks/videoPlayer/video.js'
+
 const IndexPage = () => {
   return (
     <Layout pageTitle='Home Page'>
@@ -25,7 +27,7 @@ const IndexPage = () => {
            Social Distancing info
          </div>
          <div className='humit' id='videoPlayer'>
-           video goes here
+           <VideoPlayer />
          </div>
        </div>
        <div className='d-flex justify-content-between mb-2' id='lowguard'>
