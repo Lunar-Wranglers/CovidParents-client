@@ -1,7 +1,7 @@
 import React from 'react'
 import SignUp from '../auth/SignUp'
 import SignIn from '../auth/SignIn'
-import SearchBar from '../hooks/searchBar'
+import SearchBar from '../hooks/searchBar/searchBar'
 
 import { Nav, Navbar, Dropdown, DropdownButton, Button } from 'react-bootstrap'
 import { header } from '../../stylesheets/stylesheet.scss'
