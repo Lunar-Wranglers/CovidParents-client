@@ -30,7 +30,7 @@ const VideoPlayer = () => {
               ) : (
                 <i className="bx bx-pause"></i>
               )}
-            </botton>
+            </button>
           </div>
           <input
             type='range'
@@ -51,6 +51,13 @@ const VideoPlayer = () => {
             <option value='1.75'>1.75x</option>
             <option value='2.0'>2.0x</option>
           </select>
+          <button className="mute-btn" onClick={toggleMute}>
+            {!playerState.isMuted ? (
+              <i className="bx bxs-volume-full"></i>
+            ) : (
+              <i className="bx bxs-volume-mute"></i>
+            )}
+          </button>
         </div>
       </div>
     </div>
